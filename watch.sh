@@ -12,7 +12,7 @@ Usage="Usage: $IAM [-thv] [-n <sec>] \"command\""
 
 ## dispaly a date title
 display_title () {
-  echo -e "Every $num,0s: \033[500C\033[31D[ $(date) ]"
+  echo -e "Every $num,0s: \033[500C\033[32D[ $(date) ]"
   echo -e ""
 }
 
