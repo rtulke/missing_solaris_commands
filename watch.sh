@@ -90,11 +90,13 @@ do  sc=0    # set extra arg shift count default (0 for no option arguments or
         refresh_timer $argt1 $argt2
         sc=1
         ;;
-    (\?)echo "Unkown option: -$OPTARG" >&2
+    (\?)
+        echo "Unkown option: -$OPTARG" >&2
         echo "$Usage" >&2
         # I would also exit in this case...
         ;;
-    (:) echo "Option -$OPTARG argument(s) missing" >&2
+    (:) 
+        echo "Option -$OPTARG argument(s) missing" >&2
         echo "$Usage" >&2
         exit 1
         ;;
