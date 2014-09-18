@@ -1,4 +1,5 @@
 #!/bin/bash
+# tested on solaris 8
 
 version="0.1.20"
 author="Robert Tulke, rt@debian.sh"
